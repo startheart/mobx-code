@@ -1,0 +1,16 @@
+{
+  "name": "mobx-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/anywhere -p 8000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "anywhere": "^1.5.0",
+    "mobx": "^3.6.1"
+  }
+}

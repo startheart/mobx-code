@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>story</title>
+</head>
+<body>
+  <div id="root">
+      <div id="income"></div>
+  </div>
+  <script type="text/javascript" src="../lib/mod.js"></script>
+  <script type="text/javascript" src="../node_modules/mobx/lib/mobx.umd.js"></script>
+<script type="text/javascript" >
+var bankUser = mobx.observable({
+  name: '张三',
+  income: 3,
+  debit: 2,
+  list: []
+});
+
+mobx.autorun(() => {
+  console.log(bankUser.length)
+  document.getElementById('income').innerHTML = `监测到张三的账户存款: ${bankUser.income}`
+});
+
+</script>
+</body>
+</html>
